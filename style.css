@@ -1,0 +1,168 @@
+
+*{
+    margin: 0;
+}
+.header{
+    background-color: #562EFF;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 200px;
+
+}
+.nav-head{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+ul{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+ul li{
+    font-size: 17px;
+    font-weight: 700;
+    list-style-type: none;
+}
+.nav-img{
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+}
+.main{
+    background-color: #dbd5f8;
+    display: flex;
+    justify-content: center;
+    height: 1400px;
+}
+/* Player Section  */
+.Top-player-section{
+    margin-top: 20px;
+    background-color: whitesmoke;
+}
+.player-heading, .Blog-heading, .course-heading{
+    margin: 33px;
+    color: #562EFF;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+}
+
+.player{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 30px;
+}
+
+.player img{
+    width: 56px;
+    height: 56px;
+}
+hr{
+     background: #D1D1D1;
+
+}
+/* blog section  */
+.blog-area{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding: 30px;
+}
+.Blog-part{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.blog-img{
+    width: 177px;
+    height: 177px;
+}
+.blog-author{
+    margin-top: 10px;
+    color: #9F9F9F;
+}
+
+.course-offered{
+    display: flex;
+    justify-content: space-around;
+}
+
+.course-image{
+    width: 204px;
+    height: 107px;
+}
+.course-info h3{
+    margin-top: 10px;
+}
+.course-instructor{
+    margin-top: 10px;
+    color: #ED6B4F;
+}
+.rating-arena{
+    display: flex;
+    justify-content: space-around;
+}
+.rating-arena{
+    display: flex;
+    justify-content: space-around;
+    margin-top:10px;
+}
+.star{
+    display: flex;
+    gap: 2px;
+}
+.filled,.fa-star-half-stroke{
+    color: #FFC014;
+}
+.time{
+    color: #ED6B4F;
+    background-color: #f1d8d2;
+    border-radius: 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 2px;
+}
+.time-image{
+    width: 15px;
+    height: 15px;
+}
+.footer h4{
+    margin-top: 100px;
+    text-align: center;
+    color: #562EFF;
+}
+/* Responsive part starts here  */
+
+media screen and (max-width: 576px) {
+     nav{
+        flex-direction: column;
+        padding: 0px;
+     }   
+     .nav-head{
+        flex-direction: column;
+        gap: 2px;
+     }
+     .nav-head ul{
+        display: flex;
+        flex-direction: column;
+     }
+     /* player part  */
+     .players{
+        grid-template-columns: repeat(1,1fr);
+     }
+     .player{
+        margin: 0;
+        padding: 15px;
+        gap: 5px;
+     }
+
+
+}
